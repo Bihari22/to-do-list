@@ -30,3 +30,7 @@ const task = document.querySelector("#task")
     }
              newtask.value = ""
         });
+window.addEventListener('beforeunload', function(event) {
+            event.preventDefault();
+            event.returnValue = ''
+        });
